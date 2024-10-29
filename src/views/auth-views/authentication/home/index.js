@@ -137,6 +137,17 @@ const Home = () => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   let matched_sliderRef = useRef(null);
@@ -152,6 +163,16 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   let stories_sliderRef = useRef(null);
@@ -170,6 +191,17 @@ const Home = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: false,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (
@@ -199,7 +231,7 @@ const Home = () => {
                 }}
               >
                 <Row align="bottom" gutter={16}>
-                  <Col span={5}>
+                  <Col xs={{ span: 10 }} sm={{ span: 5 }}>
                     <Form.Item
                       label="I’m looking for a"
                       className="form_control"
@@ -211,7 +243,7 @@ const Home = () => {
                       </Select>
                     </Form.Item>
                   </Col>
-                  <Col span={6}>
+                  <Col xs={{ span: 14 }} sm={{ span: 6 }}>
                     <div className="aged_filter">
                       <div className="w-100">
                         <Form.Item label="Aged" className="form_control">
@@ -234,7 +266,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Col>
-                  <Col span={5}>
+                  <Col xs={{ span: 12 }} sm={{ span: 5 }}>
                     <Form.Item label="Religion" className="form_control">
                       <Select placeholder="Select" className="w-100">
                         <Option value="one">One</Option>
@@ -243,7 +275,7 @@ const Home = () => {
                       </Select>
                     </Form.Item>
                   </Col>
-                  <Col span={5}>
+                  <Col xs={{ span: 12 }} sm={{ span: 5 }}>
                     <Form.Item label="City" className="form_control">
                       <Select placeholder="Select" className="w-100">
                         <Option value="one">One</Option>
@@ -252,7 +284,7 @@ const Home = () => {
                       </Select>
                     </Form.Item>
                   </Col>
-                  <Col span={3}>
+                  <Col xs={{ span: 24 }} sm={{ span: 3 }}>
                     <Form.Item className="form_control">
                       <Button
                         type="primary"
@@ -274,7 +306,7 @@ const Home = () => {
       {/* Our Services Section */}
       <section className="section service_section pb-0">
         <div className="container">
-          <Row gutter={16} className="mb-3">
+          <Row gutter={16} className="mb-sm-3">
             <Col span={24}>
               <div className="d-flex justify-content-between">
                 <h2 className="common_heading">
@@ -293,7 +325,7 @@ const Home = () => {
           </Row>
           <Row>
             <Col span={24} lg={24}>
-              <div className="slider-container">
+              <div className="slider_container">
                 <Slider
                   ref={(slider) => {
                     services_sliderRef = slider;
@@ -301,7 +333,7 @@ const Home = () => {
                   {...services_settings}
                 >
                   <div>
-                    <div className="services_card mr-3">
+                    <div className="services_card mr-sm-3">
                       <img
                         src={ServiceOne}
                         alt="services1"
@@ -309,7 +341,7 @@ const Home = () => {
                       />
                       <div className="content">
                         <div className="title">Makeup and Mehndi Artists</div>
-                        <Link className="view_more">View More</Link>
+                        <Link className="view_more"> View More</Link>
                       </div>
                     </div>
                   </div>
@@ -369,7 +401,7 @@ const Home = () => {
               </h2>
             </Col>
           </Row>
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16, 40]}>
             <Col span={24} lg={8}>
               <div className="trust_card">
                 <img src={ScreenedIcon} alt="icon-1" className="icons" />
@@ -465,13 +497,12 @@ const Home = () => {
             align="middle"
             className="justify-content-lg-between"
           >
-            <Col span={10}>
-              <h2 className="common_heading mb-1">Key Features</h2>
-              <p className="mb-3">
+            <Col xs={{ span: 24 }} sm={{ span: 10 }}>
+              <h2 className="common_heading mb-2 mb-sm-1">Key Features</h2>
+              <p className="mb-sm-3">
                 Lorem ipsum dolor sit amet consectetur. Bibendum erat scelerisque non sagittis placerat mauris mi venenatis dictum.
               </p>
-
-              <ul className="custom_list mb-4">
+              <ul className="custom_list mb-sm-4">
                 <li>
                   <CheckIcon />
                   <span className="text">
@@ -503,7 +534,6 @@ const Home = () => {
                   </span>
                 </li>
               </ul>
-
               <Button
                 type="primary"
                 className="btn_primary"
@@ -512,7 +542,7 @@ const Home = () => {
                 Register
               </Button>
             </Col>
-            <Col span={12}>
+            <Col xs={{ span: 24 }} sm={{ span: 12 }}>
               <div className="video-card">
                 <div className="video-container" onClick={handlePlayPause}>
                   <video id="featureVideo" src={FeatureVideo} ref={videoRef} onEnded={() => setIsPlaying(false)} />
@@ -807,7 +837,7 @@ const Home = () => {
           <Row gutter={16} className="mb-3">
             <Col span={24}>
               <h2 className="common_heading">
-                Our Couples <span>Happy Stories</span>
+                Our Couples <span className="break_line">Happy Stories</span>
               </h2>
             </Col>
           </Row>
@@ -829,7 +859,12 @@ const Home = () => {
                         <div className="right">
                           <div className="testimonial_card">
                             <div className="card_head">
-                              <QuoteIcon />
+                              <div className="profile">
+                               <img src={StoriesOne} alt="stories" />
+                              </div>
+                              <div className="quote">
+                                <QuoteIcon />
+                              </div>
                             </div>
                             <p className="para">
                               Lorem ipsum dolor sit amet consectetur. Bibendum
@@ -916,7 +951,7 @@ const Home = () => {
       </section>
 
       {/* FAQ section */}
-      <section className="section stories_section">
+      <section className="section faq_section">
         <div className="container">
           <Row gutter={16} className="mb-3 text-center">
             <Col span={24}>
@@ -924,7 +959,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row justify="center">
-            <Col span={20}>
+            <Col xs={{ span: 24 }} sm={{ span: 20 }} >
               <Collapse
                 bordered={false}
                 defaultActiveKey={["1"]}

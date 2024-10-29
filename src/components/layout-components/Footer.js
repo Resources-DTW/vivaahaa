@@ -30,9 +30,13 @@ export default function Footer() {
           justify-content: center;
           flex-direction: column;
         }
-      `}
-    >
-      <span>
+      `}>
+      <span
+        css={css`
+          @media ${MEDIA_QUERIES.MOBILE} {
+            text-align: center;
+          }
+        `}>
         Copyright &copy; {`${new Date().getFullYear()}`}{" "}
         <span className="font-weight-semibold">{`${APP_NAME}`}</span> All rights
         reserved.

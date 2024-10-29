@@ -18,7 +18,7 @@ const PartnersPreference = () => {
   return (
     <>
       {/* Partners Preference Details */}
-      <section className="section pt-5">
+      <section className="section pt-sm-5 common_register">
         <div className="container">
           <Row>
             <Col span={24} lg={12}>
@@ -124,7 +124,7 @@ const PartnersPreference = () => {
                         <Radio.Group
                           buttonStyle="solid"
                           className="custom_radio"
-                        >
+                        > 
                           <Radio.Button value="a">Unmarried</Radio.Button>
                           <Radio.Button value="b">Widowed</Radio.Button>
                           <Radio.Button value="c">Divorce</Radio.Button>
@@ -582,7 +582,7 @@ const PartnersPreference = () => {
                   </Row>
 
                   <Row gutter={16}>
-                    <Col span={24} lg={12}>
+                    <Col xs={{span: 12}} sm={{span: 24}} lg={12}>
                       <Button
                         type="primary"
                         className="btn_outline_primary"
@@ -592,7 +592,7 @@ const PartnersPreference = () => {
                         Save as draft
                       </Button>
                     </Col>
-                    <Col span={24} lg={12}>
+                    <Col xs={{span: 12}} sm={{span: 24}} lg={12}>
                       <Link to="/auth/profile-list">
                         <Button type="primary" className="btn_primary" block>
                           Set Preference

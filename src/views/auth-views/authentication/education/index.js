@@ -8,7 +8,7 @@ const Education = () => {
   return (
     <>
       {/* Education Details */}
-      <section className="section pt-5">
+      <section className="section pt-sm-5 common_register">
         <div className="container">
           <Row>
             <Col span={24} lg={12}>
@@ -165,7 +165,7 @@ const Education = () => {
                   </Row>
 
                   <Row gutter={16}>
-                    <Col span={24} lg={12}>
+                    <Col xs={{span: 12}} sm={{span: 24}} lg={12}>
                       <Button
                         type="primary"
                         className="btn_outline_primary"
@@ -175,7 +175,7 @@ const Education = () => {
                         Save as draft
                       </Button>
                     </Col>
-                    <Col span={24} lg={12}>
+                    <Col xs={{span: 12}} sm={{span: 24}} lg={12}>
                       <Link to="/auth/family-details">
                         <Button type="primary" className="btn_primary" block>
                           Continue

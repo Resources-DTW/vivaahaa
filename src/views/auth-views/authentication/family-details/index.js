@@ -8,8 +8,8 @@ const FamilyDetails = () => {
   return (
     <>
       {/* Family Details */}
-      <section className="section pt-5">
-        <div className="container">
+      <section className="section pt-sm-5 common_register">
+        <div className="container p-0">
           <Row>
             <Col span={24} lg={12}>
               <div className="common_register_left">
@@ -147,7 +147,7 @@ const FamilyDetails = () => {
                   </Row>
 
                   <Row gutter={16}>
-                    <Col span={24} lg={12}>
+                    <Col xs={{span: 12}} sm={{span: 24}} lg={12}>
                       <Button
                         type="primary"
                         className="btn_outline_primary"
@@ -157,7 +157,7 @@ const FamilyDetails = () => {
                         Save as draft
                       </Button>
                     </Col>
-                    <Col span={24} lg={12}>
+                    <Col xs={{span: 12}} sm={{span: 24}} lg={12}>
                       <Link to="/auth/horoscope">
                         <Button type="primary" className="btn_primary" block>
                           Continue
