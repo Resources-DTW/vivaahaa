@@ -133,7 +133,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Profile Created for
                           </p>
                         </Col>
@@ -144,7 +144,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">Date of Birth</p>
+                          <p className="text key_text mb-2">Date of Birth</p>
                         </Col>
                         <Col lg={4} md={4} xs={4}><p className="text mb-2 text-center"> : </p></Col>
                         <Col lg={10} md={10} xs={10}>
@@ -153,7 +153,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">Age</p>
+                          <p className="text key_text mb-2">Age</p>
                         </Col>
                         <Col lg={4} md={4} xs={4}><p className="text mb-2 text-center"> : </p></Col>
                         <Col lg={10} md={10} xs={10}>
@@ -162,7 +162,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">Marital Status</p>
+                          <p className="text key_text mb-2">Marital Status</p>
                         </Col>
                         <Col lg={4} md={4} xs={4}><p className="text mb-2 text-center"> : </p></Col>
                         <Col lg={10} md={10} xs={10}>
@@ -171,7 +171,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">Eye Color</p>
+                          <p className="text key_text mb-2">Eye Color</p>
                         </Col>
                         <Col lg={4} md={4} xs={4}><p className="text mb-2 text-center"> : </p></Col>
                         <Col lg={10} md={10} xs={10}>
@@ -180,7 +180,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">Hair Colour</p>
+                          <p className="text key_text mb-2">Hair Colour</p>
                         </Col>
                         <Col lg={4} md={4} xs={4}><p className="text mb-2 text-center"> : </p></Col>
                         <Col lg={10} md={10} xs={10}>
@@ -193,7 +193,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Hair Style
                           </p>
                         </Col>
@@ -204,7 +204,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Tattoos or Piercings
                           </p>
                         </Col>
@@ -215,7 +215,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Body Type
                           </p>
                         </Col>
@@ -226,7 +226,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Weight
                           </p>
                         </Col>
@@ -237,7 +237,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Height
                           </p>
                         </Col>
@@ -248,7 +248,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Any Disability
                           </p>
                         </Col>
@@ -277,7 +277,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Religion
                           </p>
                         </Col>
@@ -288,7 +288,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Caste
                           </p>
                         </Col>
@@ -302,7 +302,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Sub-Caste
                           </p>
                         </Col>
@@ -313,7 +313,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Mother Tongue
                           </p>
                         </Col>
@@ -342,7 +342,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Value
                           </p>
                         </Col>
@@ -353,7 +353,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Type
                           </p>
                         </Col>
@@ -364,7 +364,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Status
                           </p>
                         </Col>
@@ -375,7 +375,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Location
                           </p>
                         </Col>
@@ -389,7 +389,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             No. of Brothers
                           </p>
                         </Col>
@@ -400,7 +400,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             No. of Sister
                           </p>
                         </Col>
@@ -411,7 +411,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Father Occupation
                           </p>
                         </Col>
@@ -422,7 +422,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Mother Occupation
                           </p>
                         </Col>
@@ -451,7 +451,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Education
                           </p>
                         </Col>
@@ -462,7 +462,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             College / University
                           </p>
                         </Col>
@@ -473,7 +473,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Occupation
                           </p>
                         </Col>
@@ -484,7 +484,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Company Name
                           </p>
                         </Col>
@@ -498,7 +498,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Employed In
                           </p>
                         </Col>
@@ -509,7 +509,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Year of Experience
                           </p>
                         </Col>
@@ -520,7 +520,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Annual Income
                           </p>
                         </Col>
@@ -531,7 +531,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Work Location
                           </p>
                         </Col>
@@ -560,7 +560,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Date of Birth
                           </p>
                         </Col>
@@ -571,7 +571,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Time of Birth
                           </p>
                         </Col>
@@ -582,7 +582,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Astrological Sign
                           </p>
                         </Col>
@@ -596,7 +596,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Manglik Status
                           </p>
                         </Col>
@@ -607,7 +607,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Birth Place
                           </p>
                         </Col>
@@ -618,7 +618,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Sun Sign Compatibility
                           </p>
                         </Col>
@@ -647,7 +647,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             City
                           </p>
                         </Col>
@@ -658,7 +658,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             State
                           </p>
                         </Col>
@@ -672,7 +672,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Pin code
                           </p>
                         </Col>
@@ -683,7 +683,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Country
                           </p>
                         </Col>
@@ -712,7 +712,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Hobbies
                           </p>
                         </Col>
@@ -723,7 +723,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Interests
                           </p>
                         </Col>
@@ -734,7 +734,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Eating Habit
                           </p>
                         </Col>
@@ -748,7 +748,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Smoking Habit
                           </p>
                         </Col>
@@ -759,7 +759,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Drinking Habit
                           </p>
                         </Col>
@@ -770,7 +770,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Spoken Languages
                           </p>
                         </Col>
@@ -807,7 +807,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Age
                           </p>
                         </Col>
@@ -818,7 +818,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Height
                           </p>
                         </Col>
@@ -829,7 +829,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Marital Status
                           </p>
                         </Col>
@@ -840,7 +840,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Eating Habit
                           </p>
                         </Col>
@@ -851,7 +851,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Mother Tongue
                           </p>
                         </Col>
@@ -862,7 +862,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Weight
                           </p>
                         </Col>
@@ -876,7 +876,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Religion
                           </p>
                         </Col>
@@ -887,7 +887,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Caste
                           </p>
                         </Col>
@@ -898,7 +898,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Any Disability
                           </p>
                         </Col>
@@ -909,7 +909,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Body Type
                           </p>
                         </Col>
@@ -920,7 +920,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Smoking Habit
                           </p>
                         </Col>
@@ -931,7 +931,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Drinking Habit
                           </p>
                         </Col>
@@ -960,7 +960,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Education
                           </p>
                         </Col>
@@ -971,7 +971,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Occupation
                           </p>
                         </Col>
@@ -982,7 +982,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Work Location
                           </p>
                         </Col>
@@ -996,7 +996,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Employed In
                           </p>
                         </Col>
@@ -1007,7 +1007,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Annual Income
                           </p>
                         </Col>
@@ -1036,7 +1036,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             City
                           </p>
                         </Col>
@@ -1047,7 +1047,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             State
                           </p>
                         </Col>
@@ -1061,7 +1061,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Country
                           </p>
                         </Col>
@@ -1090,7 +1090,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Time of Birth
                           </p>
                         </Col>
@@ -1101,7 +1101,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Astrological Sign
                           </p>
                         </Col>
@@ -1115,7 +1115,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Manglik Status
                           </p>
                         </Col>
@@ -1126,7 +1126,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Sun Sign Compatibility
                           </p>
                         </Col>
@@ -1155,7 +1155,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Value
                           </p>
                         </Col>
@@ -1166,7 +1166,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Type
                           </p>
                         </Col>
@@ -1177,7 +1177,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Family Status
                           </p>
                         </Col>
@@ -1191,7 +1191,7 @@ const ProfileDetails = () => {
                     <Col span={24} lg={11}>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Brothers
                           </p>
                         </Col>
@@ -1202,7 +1202,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Sister
                           </p>
                         </Col>
@@ -1213,7 +1213,7 @@ const ProfileDetails = () => {
                       </Row>
                       <Row>
                         <Col lg={10} md={10} xs={10}>
-                          <p className="text mb-2">
+                          <p className="text key_text mb-2">
                             Father Occupation
                           </p>
                         </Col>

@@ -68,6 +68,10 @@
     display: block;
     width: 100%;
     text-align: center;
+
+    @media (max-width: @screen-sm) { 
+      width: min-content;
+    }
   }
 
   .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
@@ -80,6 +84,7 @@
 
   @media (max-width: @screen-sm) {
     gap: 10px;
+    flex-wrap: wrap;
 
     .ant-radio-button-wrapper {
       border: 1px solid rgba(27, 27, 27, 0.3);
@@ -1528,6 +1533,12 @@
           text-align: center;
           color: @gray-light;
           margin-bottom: 10px;
+
+          @media (max-width: @screen-sm) { 
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 4px;
+          }
         }
 
         .center_link {
@@ -1537,6 +1548,10 @@
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           text-decoration: underline 1px #a5147f !important;
+
+          @media (max-width: @screen-sm) { 
+            font-weight: 600;
+          }
         }
       }
     }
