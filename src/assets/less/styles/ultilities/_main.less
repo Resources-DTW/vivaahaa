@@ -1363,6 +1363,7 @@
           overflow-x: auto;
           -ms-overflow-style: none;
           scrollbar-width: none;
+          display: flex;
           gap: 10px;
 
           > .ant-tabs-tab {
@@ -1371,36 +1372,28 @@
             flex-grow: 1;
             justify-content: center;
             border: 2px solid transparent;
-            /* Set an initial border to apply gradient later */
-            padding: 0px;
-            /* Gradient border for inactive tabs */
-            background-image: linear-gradient(white, white),
-              linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
+            background-image: linear-gradient(white, white), linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
             background-origin: border-box;
             background-clip: content-box, border-box;
+            padding: 0;
 
             .ant-tabs-tab-btn {
               color: #a5147f;
               font-weight: 700;
-              padding: 0;
+              padding: 12px 16px;
             }
 
             &.ant-tabs-tab-active {
-              background: linear-gradient(
-                180deg,
-                #ff007f -17.71%,
-                #a5147f 100%
-              );
+              background: linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
               border-color: #a5147f;
 
               .ant-tabs-tab-btn {
-                color: @white;
+                color: white;
                 padding: 12px 16px;
               }
             }
 
-            // Mobile Responsive
-            @media (max-width: @screen-sm) {
+            @media (max-width: 576px) {
               gap: 8px;
               user-select: none;
               border: solid 1px transparent;
@@ -1411,7 +1404,7 @@
                 padding: 8px 15px;
               }
 
-              &.ant-tabs-tab-active {
+              &.ant-tabs-tab-active { 
                 .ant-tabs-tab-btn {
                   padding: 8px 15px;
                 }
@@ -1422,12 +1415,14 @@
 
         .ant-tabs-nav-list::-webkit-scrollbar {
           display: none;
-          /* Chrome, Safari, and Opera */
         }
       }
     }
   }
 }
+
+
+
 
 // Profile Filter Icon
 .filter_title {

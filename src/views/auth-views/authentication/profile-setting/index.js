@@ -198,7 +198,6 @@ const ProfileSetting = () => {
                     Edit
                   </Button>
                 </div>
-{/* change className your liking details are like object key value pair  */}
                 <div className="card_body">
                   <Row>
                     <Col span={24} lg={11}>
