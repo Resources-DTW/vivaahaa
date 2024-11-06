@@ -180,10 +180,11 @@ const StatusList = () => {
                   <>
                     {getPaginatedData("requests").map((userDetails, index) => (
                       <ProfileCard
-                        key={index}
-                        displayUserDetails={userDetails}
-                        sendRequest="send"
-                        addActionBtn
+                      key={index}
+                      displayUserDetails={userDetails}
+                      sendRequest="send"
+                      addActionBtn
+                      shortListed={userDetails.shortListed}
                       />
                     ))}
 
