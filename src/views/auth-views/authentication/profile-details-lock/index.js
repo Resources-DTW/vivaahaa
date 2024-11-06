@@ -24,7 +24,7 @@ const ProfileDetailsLock = () => {
           <Row justify="center" gutter={[8, 8]}>
             <Col span={24} lg={20}>
             {/* Remove previous code css for ProfileCard   sendRequest: send / rejected */}
-              <ProfileCard displayUserDetails={userDetailsArray[0]} addActionBtn />
+              <ProfileCard changeWidth={4} displayUserDetails={userDetailsArray[0]} addActionBtn />
             </Col>
 
             <Col span={24} lg={20}>

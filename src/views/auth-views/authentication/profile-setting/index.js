@@ -927,7 +927,7 @@ const ProfileSetting = () => {
                     </div>
                   </div>
                   <Collapse
-                    defaultActiveKey={["1", "2"]}
+                    defaultActiveKey={[]}
                     expandIconPosition="end"
                     expandIcon={({ isActive }) =>
                       isActive ? (

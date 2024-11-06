@@ -46,7 +46,7 @@ const ProfileDetails = () => {
         <div className="container">
           <Row justify="center" gutter={[8, 8]}>
             <Col span={24} lg={20}>
-            <ProfileCard displayUserDetails={userDetailsArray[0]} addActionBtn />
+            <ProfileCard changeWidth={4} displayUserDetails={userDetailsArray[0]} addActionBtn />
             </Col>
 
             <Col span={24} lg={20}>

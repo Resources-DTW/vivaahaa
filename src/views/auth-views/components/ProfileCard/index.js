@@ -33,6 +33,7 @@ const ProfileCard = ({
   addActionBtn,
   sendRequest,
   shortListed,
+  changeWidth
 }) => {
   const settings = {
     infinite: true,
@@ -45,12 +46,12 @@ const ProfileCard = ({
     <div className="custom_profileCard">
       <Card>
         <Row gutter={[16, 16]}>
-          <Col xs={{ span: 24 }} sm={{ span: 5 }}>
+          <Col xs={{ span: 24 }} sm={{ span: changeWidth ? changeWidth : 5 }}>
             <div className="custom-carousel">
               <CustomCarousel settings={settings} urls={ProfileCandidate} />
             </div>
           </Col>
-          <Col xs={{ span: 24 }} sm={{ span: 14 }}>
+          <Col xs={{ span: 24 }} sm={{ span: changeWidth ? (19 - changeWidth) : 14}}>
             <div className="profile_details">
               <div className="profile_head">
                 <div className="top">
