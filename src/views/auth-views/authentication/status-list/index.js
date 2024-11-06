@@ -183,6 +183,7 @@ const StatusList = () => {
                         key={index}
                         displayUserDetails={userDetails}
                         sendRequest="send"
+                        addActionBtn
                       />
                     ))}
 
