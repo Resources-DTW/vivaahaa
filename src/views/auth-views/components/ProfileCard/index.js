@@ -47,7 +47,7 @@ const ProfileCard = ({
         <Row gutter={[16, 16]}>
           <Col xs={{ span: 24 }} sm={{ span: 5 }}>
             <div className="custom-carousel">
-                <CustomCarousel settings={settings} urls={ProfileCandidate} />
+              <CustomCarousel settings={settings} urls={ProfileCandidate} />
             </div>
           </Col>
           <Col xs={{ span: 24 }} sm={{ span: 14 }}>
@@ -61,7 +61,9 @@ const ProfileCard = ({
                   </div>
                   <div className="right">
                     <Dropdown overlay={menu}>
-                      <Button onClick={(e) => e.preventDefault()} className="more_btn">
+                      <Button
+                        onClick={(e) => e.preventDefault()}
+                        className="more_btn">
                         <Space>
                           <MoreOutlined className="icon" />
                         </Space>
@@ -71,7 +73,9 @@ const ProfileCard = ({
                 </div>
                 <div className="bottom">
                   <div className="online_text">Online 2h ago</div>
-                  <Link to="/auth/home" className="chat_text">Chat now</Link>
+                  <Link to="/auth/home" className="chat_text">
+                    Chat now
+                  </Link>
                 </div>
               </div>
               {displayUserDetails && (
@@ -82,13 +86,22 @@ const ProfileCard = ({
                     <li className="text">{displayUserDetails.height}</li>
                     <li className="text">{displayUserDetails.religious}</li>
                     <li className="text">{displayUserDetails.maritalStatus}</li>
-                    <li className="text">{displayUserDetails.spokenLanguage}</li>
+                    <li className="text">
+                      {displayUserDetails.spokenLanguage}
+                    </li>
                     <li className="text">{displayUserDetails.location}</li>
                     <li className="text match_score match_score_mob">
                       Match Score <span>70%</span>
                     </li>
                   </div>
                 </Row>
+              )}
+              {sendRequest && (
+                <Col className="card_message">
+                  {sendRequest === "send"
+                    ? "You requested her to add Photo on 30 Apr 2024"
+                    : "She Declined your Invitation. This member cannot be contacted."}
+                </Col>
               )}
             </div>
           </Col>
@@ -117,15 +130,6 @@ const ProfileCard = ({
                   Match Score <span>70%</span>
                 </div>
               </div>
-            </Col>
-          )}
-          {sendRequest && (
-            <Col sm={{ push: 5 }} className="card_message ml-sm-2">
-              {sendRequest === "send" ? (
-                "You requested her to add Photo on 30 Apr 2024"
-              ) : (
-                "She Declined your Invitation. This member cannot be contacted."
-              )}
             </Col>
           )}
         </Row>
