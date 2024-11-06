@@ -5,8 +5,9 @@ import { FaRegHeart } from "react-icons/fa";
 import { RiUserAddLine } from "react-icons/ri";
 import { VerifyIcon } from "assets/svg/icon";
 import { MoreOutlined } from "@ant-design/icons";
-import ProfileCandidate from "../../../assets/vivaahaa/profilecandidate.png";
+import ProfileCandidate from "../../../../assets/vivaahaa/profilecandidate.png";
 import { Link } from "react-router-dom";
+import CustomCarousel from "./CustomCarousel";
 
 const menu = (
   <Menu
@@ -33,8 +34,6 @@ const ProfileCard = ({
   sendRequest,
   shortListed,
 }) => {
-  const ref = useRef();
-
   const settings = {
     infinite: true,
     arrows: true,
@@ -48,18 +47,7 @@ const ProfileCard = ({
         <Row gutter={[16, 16]}>
           <Col xs={{ span: 24 }} sm={{ span: 5 }}>
             <div className="custom-carousel">
-              <Carousel {...settings} className="carousel_card">
-                {[...Array(3)].map((_, index) => (
-                  <div className="profile_pic" key={index}>
-                    <img
-                      src={ProfileCandidate}
-                      alt="profile"
-                      className="img-fluid w-100"
-                      ref={ref}
-                    />
-                  </div>
-                ))}
-              </Carousel>
+                <CustomCarousel settings={settings} urls={ProfileCandidate} />
             </div>
           </Col>
           <Col xs={{ span: 24 }} sm={{ span: 14 }}>
