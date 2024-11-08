@@ -153,6 +153,11 @@ export const publicRoutes = [
     path: `${AUTH_PREFIX_PATH}/error-page-2`,
     component: React.lazy(() => import("views/auth-views/errors/error-page-2")),
   },
+  {
+    key: "super-admin",
+    path: `${AUTH_PREFIX_PATH}/super-admin/sign-in`,
+    component: React.lazy(() => import("views/auth-views/superadmin/sign-in")),
+  },
 ];
 
 export const protectedRoutes = [
