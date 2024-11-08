@@ -91,7 +91,7 @@ const SideNavContent = (props) => {
     <Menu
       mode="inline"
       theme={sideNavTheme === SIDE_NAV_LIGHT ? "light" : "dark"}
-      style={{ height: "100%", borderInlineEnd: 0 }}
+      style={{ borderInlineEnd: 0 }}
       defaultSelectedKeys={[routeInfo?.key]}
       defaultOpenKeys={setDefaultOpen(routeInfo?.key)}
       className={hideGroupTitle ? "hide-group-title" : ""}

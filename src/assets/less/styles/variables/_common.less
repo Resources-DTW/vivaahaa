@@ -144,6 +144,10 @@
 @screen-lg: 992px;
 @screen-lg-min: @screen-lg;
 
+// Large to Extra large screen / wide desktop
+@screen-lg-xl: 1200px;
+@screen-lg-xl-min: @screen-lg-xl;
+
 // Extra large screen / full hd
 @screen-xl: 1400px;
 @screen-xl-min: @screen-xl;
@@ -152,11 +156,12 @@
 @screen-xxl: 1600px;
 @screen-xxl-min: @screen-xxl;
 
-// provide a maximum
+// Provide a maximum
 @screen-xs-max: (@screen-sm-min - 1px);
 @screen-sm-max: (@screen-md-min - 1px);
 @screen-md-max: (@screen-lg-min - 1px);
-@screen-lg-max: (@screen-xl-min - 1px);
+@screen-lg-max: (@screen-lg-xl-min - 1px);
+@screen-lg-xl-max: (@screen-xl-min - 1px);
 @screen-xl-max: (@screen-xxl-min - 1px);
 
 @grid-breakpoints: {
@@ -164,6 +169,7 @@
 	sm: @screen-sm;
 	md: @screen-md;
 	lg: @screen-lg;
+	lg-xl: @screen-lg-xl;
 	xl: @screen-xl;
 	xxl: @screen-xxl;
 };

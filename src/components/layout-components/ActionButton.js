@@ -2,7 +2,7 @@ import { Button, Col, Form, Input, Modal, Row, Select } from "antd";
 import LogoLight from "../../assets/vivaahaa/logo_light.svg";
 import { useState } from "react";
 
-const ActionButton = () => {
+const ActionButton = ({ changeWidth }) => {
   const { Option } = Select;
 
   const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -66,12 +66,27 @@ const ActionButton = () => {
   const handleVerifyMobileOtpOk = () => {
     setIsVerifyMobileOtpModalOpen(false);
   };
+
+
+  const containerStyle = {
+    width: '100%',
+  }
+
+  const buttonStyle = {
+    flex: '1 1 50%', 
+    margin: '0 10px', 
+    maxWidth: '50%', 
+    textAlign: 'center',
+    padding: '0',
+  }
+
   return (
     <>
-      <div className="d-flex align-items-center">
+      <div className="d-flex align-items-center" style={changeWidth? containerStyle : null}>
         <Button
           type="primary"
           className="btn_primary mr-2 pl-lg-4 pr-lg-4"
+          style={changeWidth? buttonStyle : null}
           onClick={showRegisterModal}
         >
           Register
@@ -79,6 +94,7 @@ const ActionButton = () => {
         <Button
           type="primary"
           className="btn_outline_primary pl-lg-4 pr-lg-4"
+          style={changeWidth? buttonStyle : null}
           ghost
           onClick={showLoginModal}
         >

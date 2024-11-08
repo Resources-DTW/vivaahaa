@@ -111,7 +111,7 @@ const BREAKPOINT = {
   sm: "576px",
   md: "768px",
   lg: "992px",
-  xl: "1279px",
+  xl: "1400px",
   xxl: "1600px",
 };
 

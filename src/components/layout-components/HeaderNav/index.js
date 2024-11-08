@@ -2,7 +2,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { TEMPLATE } from "constants/ThemeConstant";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
+import { MenuFoldOutlined, MenuOutlined } from "@ant-design/icons";
 import Logo from "../Logo";
 import NavProfile from "../NavProfile";
 import NavSearch from "../NavSearch";
@@ -83,6 +83,8 @@ export const HeaderNav = (props) => {
     }
   });
 
+  const navStyles = isMobile ? { width: "100%"} : {};
+
   return (
     <>
       <Header
@@ -94,16 +96,12 @@ export const HeaderNav = (props) => {
           {isNavTop && !isMobile ? (
             <TopNav routeInfo={props.currentRouteInfo} />
           ) : null}
-          <Nav navWidth={getNavWidth()}>
+          <Nav navWidth={getNavWidth()} style={navStyles}>
             <NavEdge left>
               {isNavTop && !isMobile ? null : (
                 <NavItem onClick={onToggle} mode={navMode}>
                   <div className="d-flex align-items-center">
-                    {navCollapsed || isMobile ? (
-                      <MenuUnfoldOutlined className="nav-icon" />
-                    ) : (
-                      <MenuFoldOutlined className="nav-icon" />
-                    )}
+                    <MenuOutlined className="nav-icon" />
                   </div>
                 </NavItem>
               )}
@@ -129,7 +127,12 @@ export const HeaderNav = (props) => {
               {/* <NavNotification mode={navMode} /> */}
               {/* <NavLanguage mode={navMode} /> */}
               {/* <NavPanel direction={direction} mode={navMode} /> */}
-              <ActionButton />
+              {isNavTop && !isMobile ? ( 
+                <ActionButton />
+              ) : (
+                <Logo logoType={navMode}mobileLogo={true} />
+              )}
+              
               {/* <NavProfile mode={navMode} /> */}
             </NavEdge>
             <NavSearch

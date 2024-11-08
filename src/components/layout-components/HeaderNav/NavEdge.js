@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const NavEdge = styled.div(({ left, right }) => {
+const NavEdge = styled.div(({ left, right, center }) => {
   if (left) {
     return {
       display: "flex",
@@ -9,7 +9,6 @@ const NavEdge = styled.div(({ left, right }) => {
 
   if (right) {
     return {
-      marginLeft: "auto",
       padding: "0 1rem",
       display: "flex",
       justifyContent: "flex-end",

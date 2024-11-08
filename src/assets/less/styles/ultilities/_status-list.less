@@ -179,9 +179,12 @@
     height: 100vh;
     display: none;
     overflow-y: scroll;
+    background-color: @white;
+    box-shadow: 0 0 20px rgba(@black, 0.1);
   }
   .search_filter_wrap {
     padding: 35px 20px 0 20px;
+    box-shadow: none;
   }
 
   .show {
@@ -696,6 +699,7 @@ p {
   line-height: 22.59px;
   text-align: left;
   color: @gray-light;
+  transition: all 0.3s ease;
 
   @media (max-width: @screen-sm) {
     font-size: 14px;
