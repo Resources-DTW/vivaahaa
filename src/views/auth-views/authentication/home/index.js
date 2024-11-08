@@ -42,7 +42,7 @@ import {
   SmallCheckIcon,
 } from "assets/svg/icon";
 import Slider from "react-slick";
-import './index.css';
+import "./index.css";
 
 const Home = () => {
   const { Option } = Select;
@@ -58,7 +58,7 @@ const Home = () => {
     useState(false);
   const [isRegisterModalOpen, setIsRegisterModalOpen] = useState(false);
 
-  //video 
+  //video
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -500,7 +500,8 @@ const Home = () => {
             <Col xs={{ span: 24 }} sm={{ span: 10 }}>
               <h2 className="common_heading mb-2 mb-sm-1">Key Features</h2>
               <p className="mb-sm-3">
-                Lorem ipsum dolor sit amet consectetur. Bibendum erat scelerisque non sagittis placerat mauris mi venenatis dictum.
+                Lorem ipsum dolor sit amet consectetur. Bibendum erat
+                scelerisque non sagittis placerat mauris mi venenatis dictum.
               </p>
               <ul className="custom_list mb-sm-4">
                 <li>
@@ -545,7 +546,12 @@ const Home = () => {
             <Col xs={{ span: 24 }} sm={{ span: 12 }}>
               <div className="video-card">
                 <div className="video-container" onClick={handlePlayPause}>
-                  <video id="featureVideo" src={FeatureVideo} ref={videoRef} onEnded={() => setIsPlaying(false)} />
+                  <video
+                    id="featureVideo"
+                    src={FeatureVideo}
+                    ref={videoRef}
+                    onEnded={() => setIsPlaying(false)}
+                  />
                   {!isPlaying && (
                     <div className="play-icon">
                       <PlayIcon />
@@ -597,7 +603,11 @@ const Home = () => {
                       <div className="content">
                         <div className="title">Arun & Swathi</div>
                         {/* <Link className="view_more">View More</Link> */}
-                        <p className="description">Lorem ipsum dolor sit amet consectetur. Bibendum erat scelerisque non sagittis placerat mauris mi venenatis dictum. </p>
+                        <p className="description">
+                          Lorem ipsum dolor sit amet consectetur. Bibendum erat
+                          scelerisque non sagittis placerat mauris mi venenatis
+                          dictum.{" "}
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -611,7 +621,11 @@ const Home = () => {
                       <div className="content">
                         <div className="title">Sekar & Vidhya</div>
                         {/* <Link className="view_more">View More</Link> */}
-                        <p className="description">Lorem ipsum dolor sit amet consectetur. Bibendum erat scelerisque non sagittis placerat mauris mi venenatis dictum.</p>
+                        <p className="description">
+                          Lorem ipsum dolor sit amet consectetur. Bibendum erat
+                          scelerisque non sagittis placerat mauris mi venenatis
+                          dictum.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -625,7 +639,11 @@ const Home = () => {
                       <div className="content">
                         <div className="title">Venkat & Divya</div>
                         {/* <Link className="view_more">View More</Link> */}
-                        <p className="description">Lorem ipsum dolor sit amet consectetur. Bibendum erat scelerisque non sagittis placerat mauris mi venenatis dictum.</p>
+                        <p className="description">
+                          Lorem ipsum dolor sit amet consectetur. Bibendum erat
+                          scelerisque non sagittis placerat mauris mi venenatis
+                          dictum.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -860,7 +878,7 @@ const Home = () => {
                           <div className="testimonial_card">
                             <div className="card_head">
                               <div className="profile">
-                               <img src={StoriesOne} alt="stories" />
+                                <img src={StoriesOne} alt="stories" />
                               </div>
                               <div className="quote">
                                 <QuoteIcon />
@@ -959,7 +977,7 @@ const Home = () => {
             </Col>
           </Row>
           <Row justify="center">
-            <Col xs={{ span: 24 }} sm={{ span: 20 }} >
+            <Col xs={{ span: 24 }} sm={{ span: 20 }}>
               <Collapse
                 bordered={false}
                 defaultActiveKey={["1"]}
@@ -1366,6 +1384,8 @@ const Home = () => {
       </Modal>
 
       {/* Verify Mobile OTP */}
+      {/* Verify Mobile OTP */}
+
       <Modal
         open={isVerifyMobileOtpModalOpen}
         onOk={handleVerifyMobileOtpOk}
