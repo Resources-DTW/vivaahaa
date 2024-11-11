@@ -1,0 +1,267 @@
+//  VendorsCard Component
+
+.vendor-card {
+  position: relative;
+  width: 100%; 
+  border-radius: 16px;
+  overflow: hidden;
+  .vendor-profile-img {
+    width: 100%; 
+    height: 0;
+    padding-bottom: 120%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .position-abs {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+  }
+
+  .tag_box {
+    position: absolute;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    .text {
+      color: @white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 22.4px;
+    }
+  }
+
+  .icon-star {
+    color: @white;
+    font-size: 22.4px;
+  }
+
+  .bg-popular {
+    background: linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
+  }
+
+  .bg-premium {
+    background: #ebd619;
+  }
+
+  .bg-preferred {
+    background: #08675c;
+  }
+
+  .shortlist {
+    position: absolute;
+    display: inline-block;
+    padding: 8px 12px;
+    right: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+.vendor-card {
+  .info_box {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(60px);
+    color: @white;
+    border-radius: 8px;
+
+    .top_heading {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ffffff36;
+      padding-bottom: 5px;
+      margin-bottom: 5px;
+
+      .title {
+        font-size: 18px;
+        font-weight: 500;
+        color: @white;
+      }
+
+      .text {
+        font-size: 16px;
+        font-weight: 400;
+        color: @white;
+      }
+
+      .rating {
+        height: fit-content;
+        padding: 4px 8px;
+        display: flex;
+        align-items: center;
+        background: #ebd619;
+        color: @gray-light;
+        font-weight: 700;
+        border-radius: 4px;
+        gap: 2px;
+      }
+    }
+
+    .main_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .starting_price {
+        > p {
+          font-size: 14px;
+          line-height: 125%;
+          margin-bottom: 4px;
+          color: @white;
+        }
+
+        > h3 {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 28px;
+          color: @white;
+        }
+      }
+
+      .enquiry_btn {
+        height: 50px;
+        background: linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
+        padding: 12px 18px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 125px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: @screen-sm) {
+  .vendor-card {
+    padding: 16px 12px;
+    background: #f6f6f6;
+    border-radius: 12px;
+    
+    .vendor-profile-img {
+      padding-bottom: 100%;
+      border-radius: 8px;
+    }
+
+    .position-abs {
+      top: 36px; 
+
+      .text {
+        font-size: 12px;
+        line-height: 16.8px;
+      }
+    }
+
+    .shortlist {
+      right: 27px;
+    }
+
+    .icon-star {
+      font-size: 16.8px;
+    }
+
+    .info_box {
+      position: static;
+      background: none;
+      padding: 0;
+      margin-top: 16px;
+
+      .top_heading {
+        .title {
+          font-size: 16px;
+          line-height: 22.4px;
+          color: black;
+        }
+
+        .text {
+          font-size: 16px;
+          font-weight: 400;
+          color: #1b1b1b99;
+        }
+      }
+
+      .main_content {
+        .starting_price {
+          > p {
+            color: #1b1b1b99;
+          }
+
+          > h3 {
+            color: #ff007f;
+          }
+        }
+
+        .enquiry_btn {
+          font-size: 16px;
+          line-height: 20.08px;
+          padding: 10px 26px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+
+
+//  Mehndi-artist/index.js
+
+.mehndi-artist {
+  .card-group-one {
+    padding: 100px 0;
+  }
+
+  .card-group-two {
+    margin-top: 80px;
+  }
+
+  .service_section {
+    background: linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
+    padding: 80px 0;
+
+    .common_heading {
+      color: white;
+    }
+
+    .next_pre_btn {
+      .slick-arrow {
+        display: none;
+      }
+    }
+  }
+
+  .card-group .group-two {
+    margin-top: 80px;
+  }
+
+  .showMore-btn {
+    height: 50px;
+    background: linear-gradient(180deg, #ff007f -17.71%, #a5147f 100%);
+    padding: 12px 18px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 125px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .add-mt {
+    margin-top: 80px;
+  }
+}

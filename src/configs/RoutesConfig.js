@@ -97,6 +97,27 @@ export const publicRoutes = [
     ),
   },
   {
+    key: "mehndi-artists",
+    path: `${AUTH_PREFIX_PATH}/mehndi-artists`,
+    component: React.lazy(
+      () => import("views/auth-views/authentication/vendors/mehndi-artists")
+    ),
+  },
+  {
+    key: "mehndi-artists/profile-details",
+    path: `${AUTH_PREFIX_PATH}/mehndi-artists/profile-details`,
+    component: React.lazy(
+      () => import("views/auth-views/authentication/vendors/mehndi-artists/profile-details")
+    ),
+  },
+  {
+    key: "mehndi-artists/search-result",
+    path: `${AUTH_PREFIX_PATH}/mehndi-artists/search-result`,
+    component: React.lazy(
+      () => import("views/auth-views/authentication/vendors/mehndi-artists/search-result")
+    ),
+  },
+  {
     key: "chat",
     path: `${AUTH_PREFIX_PATH}/chat/*`,
     component: React.lazy(() => import("views/auth-views/authentication/chat")),
