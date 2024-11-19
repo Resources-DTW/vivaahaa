@@ -153,6 +153,11 @@ export const publicRoutes = [
     path: `${AUTH_PREFIX_PATH}/error-page-2`,
     component: React.lazy(() => import("views/auth-views/errors/error-page-2")),
   },
+  {
+    key: "services.type",
+    path: `${AUTH_PREFIX_PATH}/services/:type`,
+    component: React.lazy(() => import("views/app-views/services")),
+  }
 ];
 
 export const protectedRoutes = [
@@ -851,4 +856,14 @@ export const protectedRoutes = [
     path: `${APP_PREFIX_PATH}/docs/documentation/*`,
     component: React.lazy(() => import("views/app-views/docs")),
   },
+  {
+    key: "app.matchmaking",
+    path: `${APP_PREFIX_PATH}/matchmaking`,
+    component: React.lazy(() => import("views/auth-views/authentication/match-making")),
+  },
+  {
+    key: "services.type",
+    path: `${APP_PREFIX_PATH}/services/:type`,
+    component: React.lazy(() => import("views/app-views/services")),
+  }
 ];
