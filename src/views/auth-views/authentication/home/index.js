@@ -1384,8 +1384,6 @@ const Home = () => {
       </Modal>
 
       {/* Verify Mobile OTP */}
-      {/* Verify Mobile OTP */}
-
       <Modal
         open={isVerifyMobileOtpModalOpen}
         onOk={handleVerifyMobileOtpOk}
