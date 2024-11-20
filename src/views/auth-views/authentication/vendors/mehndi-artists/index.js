@@ -57,7 +57,7 @@ const MehandiArtists = () => {
   };
 
   const screens = Grid.useBreakpoint();
-  const CustomGutter = screens.xs ? [30] : [30, 40]
+  const CustomGutter = screens.xs ? [20, 20] : [30, 30]
 
   const { Option } = Select;
   const { Panel } = Collapse;
@@ -308,9 +308,9 @@ const MehandiArtists = () => {
             ))}
             <div className="d-flex justify-content-center w-100">
               {visibleVendors < vendorsDetails.length && (
-                <button onClick={loadMoreVendors} className="showMore-btn">
+                <Button onClick={loadMoreVendors} className="btn__primary">
                   Show More Mehndi Artists
-                </button>
+                </Button>
               )}
             </div>
           </Row>

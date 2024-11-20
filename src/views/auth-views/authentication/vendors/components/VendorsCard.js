@@ -9,7 +9,7 @@ import { Col } from "antd";
 import ResponsiveImage from "./ResponsiveImgClr";
 import vendorBackground from "../../../../../assets/vivaahaa/stories1.svg";
 
-const Tag = ({ tag }) => {
+export const Tag = ({ tag }) => {
   let bgContent;
   let tagTitle;
   if (tag === "popular") {
@@ -91,7 +91,7 @@ const VendorsCard = ({ vendorDetails }) => {
               <p>Starting From</p>
               <h3>₹ {startingPrice}</h3>
             </div>
-            <div className="enquiry_btn">Enquiry Now</div>
+            <div className="btn__primary">Enquiry Now</div>
           </div>
         </div>
       </div>

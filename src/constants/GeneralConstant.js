@@ -200,13 +200,7 @@ export const vendorsDetails = [
     tag: "popular",
     rating: 4.5,
     startingPrice: 5000,
-    package: {
-      ClassicBridal: 5000,
-      elegantBridal: 6000,
-      starBridal: 7000,
-      royalBridal: 10000,
-      custom: 12000,
-    }
+    packageName :"For Bride's full mehndi",
   },
   {
     service: "mehndi-artist",

@@ -13,6 +13,7 @@ import {
 import LoveImg from "../../../../assets/vivaahaa/love_img.svg";
 import { Link } from "react-router-dom";
 
+
 const PersonalDetails = () => {
   const { Option } = Select;
 
